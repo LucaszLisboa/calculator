@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="calculadora">
+    <article id="display">
+      0
+    </article>
+    <article id="teclado">
+      <article>
+        <button type="button" class="btn btn-number" onclick="writeCharacterInDisplay(this)">7</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">8</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">9</button>
+        <button class="btn btn-operator" onclick="writeCharacterInDisplay(this)">/</button>
+      </article>
+      <article>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">4</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">5</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">6</button>
+        <button class="btn btn-operator" onclick="writeCharacterInDisplay(this)">*</button>
+      </article>
+      <article>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">1</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">2</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">3</button>
+        <button class="btn btn-operator" onclick="writeCharacterInDisplay(this)">+</button>
+      </article>
+      <article>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">.</button>
+        <button class="btn btn-number" onclick="writeCharacterInDisplay(this)">0</button>
+        <button class="btn btn-number" onclick="clearDisplay()">C</button>
+        <button class="btn btn-operator" onclick="writeCharacterInDisplay(this)">-</button>
+      </article>
+      <article>
+        <button class="btn btn-result" onclick="calculateResult()">=</button>
+      </article>
+    </article>
+  </section>
+  
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
